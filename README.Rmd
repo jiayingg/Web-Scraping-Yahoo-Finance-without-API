@@ -66,3 +66,6 @@ kable(final.summary[1:10,])
 ```
 
 $$...$$
+
+
+*Scraped data shown above might not be consistent because they are scraped in different time.*

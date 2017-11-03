@@ -85,3 +85,5 @@ Used `dplyr` and `tidyr` library.
 | FV   |         27.0300|  27.0100|      27.05|     50800|      27.09|     54000|    26.9500|     27.0900|       21.740|         27.20|  112068|       230195|  2400000000|  26.17|              NA|  0.0075|      0.1340|       0.99|               0.0030| 2014-03-05     |
 
 ...
+
+*Scraped data shown above might not be consistent because they are scraped in different time.*
