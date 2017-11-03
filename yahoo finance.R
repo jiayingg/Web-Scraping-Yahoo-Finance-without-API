@@ -56,5 +56,5 @@ summary$Scale[summary$Scale == "B"] = 1000000000
 summary$Scale = as.numeric(summary$Scale)
 summary$`Net Assets` = summary$`Net Assets` *summary$Scale
 
-final.summary = summary
+final.summary = select(summary, -Scale)
 save(final.summary, file = "data/final summary.RData")
