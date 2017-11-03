@@ -2,8 +2,8 @@ library(XML)
 library(dplyr)
 library(tidyr)
 
-new_funds = read.csv("new funds.csv")
-current_funds = read.csv("current funds.csv")
+new_funds = read.csv("data/new funds.csv")
+current_funds = read.csv("data/current funds.csv")
 
 sym = c(as.character(new_funds$Ticker.Symbol))
 summary = NULL
