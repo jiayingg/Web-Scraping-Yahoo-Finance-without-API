@@ -24,7 +24,7 @@ for(s in sym)
   print(smr)
 }
 
-save(summary, file = "funds summary.RData")
+save(summary, file = "data/funds summary.RData")
 
 # data cleaning
 
@@ -57,4 +57,4 @@ summary$Scale = as.numeric(summary$Scale)
 summary$`Net Assets` = summary$`Net Assets` *summary$Scale
 
 final.summary = summary
-save(final.summary, file = "final summary.RData")
+save(final.summary, file = "data/final summary.RData")
