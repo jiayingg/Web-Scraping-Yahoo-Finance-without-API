@@ -17,17 +17,17 @@ knitr::opts_chunk$set(echo = FALSE,
 
 Something wrong with my python [yahoo finance](https://pypi.python.org/pypi/yahoo-finance/1.1.4) API so tried `R`.
 
-**Goal** 
+### Goal
 
 Scrape the *Yahoo Finance* summary page of a list of commission-free exchange-traded funds (ETFs) described in [here](https://www.tdameritrade.com/retail-en_us/resources/pdf/TDA1000835.pdf) using the ticker symbol it provided.
 
 ![Summary table of a fund](img/summary.PNG)
 
-**Data** 
+### Data
 
 The ticker symbols are extracted from the pdf already: `new funds.csv`
 
-**Web Scraping** 
+### Web Scraping
 
 Used `XML` library.
 
@@ -52,11 +52,17 @@ library(kableExtra)
 kable(t(smr))
 ```
 
-**Data Cleaning and Transformation**
+### Data Cleaning and Transformation
 
-Data are saved as `chr`. Used `dplyr` and `tidyr` library to clean and transform.
+Data saved as `chr` need to be transform into `num`.
+
+Missing value needs to be replaced.
+
+Used `dplyr` and `tidyr` library.
 
 ```{r}
 load("data/final summary.RData")
-kable(t(final.summary[1:5,]))
+kable(final.summary[1:10,])
 ```
+
+$$...$$
